@@ -1,0 +1,95 @@
+.offers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 15px;
+  /* Reduced padding */
+  background: linear-gradient(to bottom, #fce4fc, #e1f0e1);
+  /* Gradient matching the image */
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.offers-left {
+  flex: 1;
+  text-align: left;
+  padding: 15px;
+  /* Reduced padding */
+}
+
+.offers-left h1 {
+  font-size: 2.5rem;
+  /* Smaller font size */
+  font-weight: bold;
+  color: #171717;
+  /* Matching the dark text color */
+  line-height: 1.2;
+}
+
+.offers-left p {
+  font-size: 1rem;
+  /* Smaller text */
+  color: #555;
+  /* Subtle gray text */
+  margin-top: 8px;
+}
+
+.offers-left button {
+  background-color: #ff4141;
+  /* Red button as per the image */
+  color: #fff;
+  padding: 10px 20px;
+  /* Smaller button padding */
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  /* Slightly smaller button text */
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.offers-left button:hover {
+  background-color: #e63939;
+  /* Slightly darker red on hover */
+}
+
+.offers-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offers-right img {
+  width: 100%;
+  max-width: 400px;
+  /* Slightly smaller max-width */
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .offers {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    /* Reduced padding for smaller screens */
+  }
+
+  .offers-left {
+    margin-bottom: 15px;
+  }
+
+  .offers-right img {
+    max-width: 70%;
+    /* Slightly smaller on mobile */
+  }
+
+  .offers-left button {
+    width: 100%;
+    padding: 12px;
+    /* Adjusted button padding */
+  }
+}

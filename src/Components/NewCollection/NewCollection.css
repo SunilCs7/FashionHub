@@ -1,0 +1,124 @@
+.new-collection {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    /* Light background for better contrast */
+    text-align: center;
+}
+
+.new-collection h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.collection hr {
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.collection-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collection-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.collection-item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.collection-item h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0;
+}
+
+.collection-item .prices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.collection-item .new-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2d6a4f;
+    /* Green for the new price */
+}
+
+.collection-item .old-price {
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    color: #999;
+    /* Subtle gray for the old price */
+}
+
+.collection-item button {
+    background-color: #ff4141;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.collection-item button:hover {
+    background-color: #e63939;
+    /* Slightly darker red */
+}
+
+@media (max-width: 768px) {
+    .new-collection {
+        padding: 20px 10px;
+    }
+
+    .new-collection h1 {
+        font-size: 2rem;
+    }
+
+    .collection-item {
+        padding: 10px;
+    }
+
+    .collection-item img {
+        max-width: 150px;
+        /* Adjust image size for smaller screens */
+    }
+
+    .collection-item h2 {
+        font-size: 1rem;
+    }
+
+    .collection-item button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}

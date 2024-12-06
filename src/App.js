@@ -5,6 +5,7 @@ import Product from "./Pages/Product";
 import Shop from "./Pages/Shop";
 import ShopCat from "./Pages/ShopCat";
 import Cart from "./Pages/Cart";
+import Footer from "../src/Components/Footer/Footer";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Use BrowserRouter to wrap your routes
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
         </Routes>
       </Router>
+      <Footer />
     </div>
   );
 }

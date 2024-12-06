@@ -1,8 +1,8 @@
 .footer {
-    background-color: #333;
-    /* Dark background for footer */
-    color: #fff;
-    /* White text for contrast */
+    background-color: rgb(245, 241, 249);
+    /* Light background color */
+    color: #333;
+    /* Darker text for better contrast */
     padding: 40px 20px;
     text-align: center;
     display: flex;
@@ -84,8 +84,8 @@
 
 .footer-coppyright p {
     font-size: 0.9rem;
-    color: #aaa;
-    /* Lighter gray for copyright text */
+    color: #555;
+    /* Adjusted text color for better readability */
 }
 
 @media (max-width: 768px) {
